@@ -26,21 +26,21 @@ app.listen(PORT, () => {
 await connect(MONGODB);
 console.log("MongoDB Connected");
 
-async function checkAndInsert() {
-    try {
-      const count = await Exam.countDocuments({});
+// async function checkAndInsert() {
+    // try {
+      // const count = await Exam.countDocuments({});
   
-      if (count === 0) {
-        await Exam.insertMany(Questions);
-        console.log('Preguntas iniciales insertadas exitosamente.');
-      } else {
-        console.log('Ya existen preguntas en la base de datos.');
-      }
-    } catch (err) {
-      console.error('Error:', err);
-    }
-}
+      // if (count === 0) {
+        // await Exam.insertMany(Questions);
+        // console.log('Preguntas iniciales insertadas exitosamente.');
+      // } else {
+        // console.log('Ya existen preguntas en la base de datos.');
+      // }
+    // } catch (err) {
+      // console.error('Error:', err);
+    // }
+// }
   
-checkAndInsert();
+// checkAndInsert();
   
 
