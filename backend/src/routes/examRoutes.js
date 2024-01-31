@@ -11,6 +11,7 @@ router.post("/submit", async (req, res) => {
       const correctAnswer = sampleExam[index].correctOptionIndex;
       return {
         questionIndex: index,
+        question: sampleExam[index].text,
         userAnswer: sampleExam[index].options[userAnswer],
         correctAnswer: sampleExam[index].options[correctAnswer],
         isCorrect: userAnswer === correctAnswer,

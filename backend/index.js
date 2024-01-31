@@ -8,7 +8,7 @@ import "dotenv/config";
 
 const { connect } = pkg;
 
-const MONGODB = "mongodb+srv://cristianpaez009:iXqtRJM1z2I27WPE@cluster0.aqgm9fo.mongodb.net/?retryWrites=true&w=majority"
+const MONGODB = process.env.DB || "mongodb+srv://cristianpaez009:iXqtRJM1z2I27WPE@cluster0.aqgm9fo.mongodb.net/?retryWrites=true&w=majority"
 
 const app = express();
 
