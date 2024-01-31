@@ -48,6 +48,5 @@ async function checkAndInsert() {
     }
 }
   
-checkAndInsert();
   
 
