@@ -19,10 +19,6 @@ app.use(express.json());
 
 app.use('/api/exam', examRoutes);
 
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
-
 async function startServer() {
   await connect(MONGODB);
   console.log("MongoDB Connected");
